@@ -1,0 +1,19 @@
+<header>
+  <div class="brand">
+    LevelUP
+  </div>
+
+  <nav class="menu">
+    <ul>
+      <li><a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink='/'>Accueil</a></li>
+      <li><a  routerLinkActive="active" routerLink="/settings">Paramètres</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <app-user-info></app-user-info>
+  </div>
+
+</header>
+
+

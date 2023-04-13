@@ -1,0 +1,8 @@
+<p>adventures :</p>
+<ul>
+  <button *ngFor="let adventure of adventureService.adventures; let i = index">
+    <li >
+      {{ adventure.name}}
+    </li>
+  </button>
+</ul>
