@@ -98,37 +98,41 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                 </ul>
                 </li>
+                        <li class="chapter">
+                            <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#injectables-links"' :
+                                'data-target="#xs-injectables-links"' }>
+                                <span class="icon ion-md-arrow-round-down"></span>
+                                <span>Injectables</span>
+                                <span class="icon ion-ios-arrow-down"></span>
+                            </div>
+                            <ul class="links collapse " ${ isNormalMode ? 'id="injectables-links"' : 'id="xs-injectables-links"' }>
+                                <li class="link">
+                                    <a href="injectables/AdventureService.html" data-type="entity-link" >AdventureService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/SettingService.html" data-type="entity-link" >SettingService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/UserService.html" data-type="entity-link" >UserService</a>
+                                </li>
+                            </ul>
+                        </li>
                     <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#components-links"' :
-                            'data-target="#xs-components-links"' }>
-                            <span class="icon ion-md-cog"></span>
-                            <span>Components</span>
+                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#interfaces-links"' :
+                            'data-target="#xs-interfaces-links"' }>
+                            <span class="icon ion-md-information-circle-outline"></span>
+                            <span>Interfaces</span>
                             <span class="icon ion-ios-arrow-down"></span>
                         </div>
-                        <ul class="links collapse " ${ isNormalMode ? 'id="components-links"' : 'id="xs-components-links"' }>
+                        <ul class="links collapse " ${ isNormalMode ? ' id="interfaces-links"' : 'id="xs-interfaces-links"' }>
                             <li class="link">
-                                <a href="components/AdventureInfoComponent.html" data-type="entity-link" >AdventureInfoComponent</a>
+                                <a href="interfaces/Adventure.html" data-type="entity-link" >Adventure</a>
                             </li>
                             <li class="link">
-                                <a href="components/AdventuresComponent.html" data-type="entity-link" >AdventuresComponent</a>
+                                <a href="interfaces/Setting.html" data-type="entity-link" >Setting</a>
                             </li>
                             <li class="link">
-                                <a href="components/AppComponent.html" data-type="entity-link" >AppComponent</a>
-                            </li>
-                            <li class="link">
-                                <a href="components/HeaderComponent.html" data-type="entity-link" >HeaderComponent</a>
-                            </li>
-                            <li class="link">
-                                <a href="components/HomeComponent.html" data-type="entity-link" >HomeComponent</a>
-                            </li>
-                            <li class="link">
-                                <a href="components/SettingsComponent.html" data-type="entity-link" >SettingsComponent</a>
-                            </li>
-                            <li class="link">
-                                <a href="components/StatisticsComponent.html" data-type="entity-link" >StatisticsComponent</a>
-                            </li>
-                            <li class="link">
-                                <a href="components/UserInfoComponent.html" data-type="entity-link" >UserInfoComponent</a>
+                                <a href="interfaces/User.html" data-type="entity-link" >User</a>
                             </li>
                         </ul>
                     </li>
